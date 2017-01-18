@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="together">
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:duration="1500"
+            android:propertyName="translationY"
+            android:valueFrom="0dp"
+            android:valueTo="300dp"
+            />
+        <objectAnimator
+            android:duration="1500"
+            android:propertyName="translationY"
+            android:valueFrom="300dp"
+            android:valueTo="0dp"
+            />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:duration="1500"
+            android:propertyName="alpha"
+            android:valueFrom="1.0f"
+            android:valueTo="0.5f"
+            android:valueType="floatType">
+        </objectAnimator>
+        <objectAnimator
+            android:duration="1500"
+            android:propertyName="alpha"
+            android:valueFrom="0.5f"
+            android:valueTo="1.0f"
+            android:valueType="floatType">
+        </objectAnimator>
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:duration="1500"
+            android:propertyName="textSize"
+            android:valueFrom="18.0f"
+            android:valueTo="10.0f"
+            android:valueType="floatType">
+        </objectAnimator>
+        <objectAnimator
+            android:duration="1500"
+            android:propertyName="textSize"
+            android:valueFrom="10.0f"
+            android:valueTo="18.0f"
+            android:valueType="floatType">
+        </objectAnimator>
+    </set>
+</set>
