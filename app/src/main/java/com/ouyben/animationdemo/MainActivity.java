@@ -2,7 +2,6 @@ package com.ouyben.animationdemo;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -17,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
     private ListView mListview;
-    private FloatingActionButton mFab;
 
     private ArrayAdapter<String> mAdapter;
     private Context mContext;
@@ -38,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mList.add("ObjectAnimator方式改变textview字体大小");
         mList.add("ObjectAnimator方式组合改变text属性");
         mList.add("XML方式改变text属性");
+        mList.add("ValueAnimator的高级用法");
         mAdapter = new ArrayAdapter<String>(mContext, android.R.layout.simple_list_item_1, mList);
         mListview.setAdapter(mAdapter);
         mListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -56,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         XMLAnimActivity.startActivity(mContext);
                         break;
-
+                    case 4:
+                        ValueAnimator2Activity.startActivity(mContext);
+                        break;
                 }
             }
         });

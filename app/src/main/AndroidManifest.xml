@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".XMLAnimActivity">
         </activity>
+        <activity android:name=".ValueAnimator2Activity">
+        </activity>
     </application>
 
 </manifest>
