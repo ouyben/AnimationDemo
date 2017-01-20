@@ -60,7 +60,7 @@ public class AnimValueView extends View {
         } else {
             x = radius;
         }
-        y = (float) (radius + Math.random() * (height - radius + 1));
+        y = (float) (radius + Math.random() * (height - radius * 2 + 1));
         Log.d("Anima", "x: " + x + ",y: " + y);
         Point end = new Point(x, y);
         ValueAnimator animator = ValueAnimator.ofObject(new PointEvaluator(), start, end);
